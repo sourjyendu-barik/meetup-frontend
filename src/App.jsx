@@ -20,7 +20,7 @@ function App() {
 
   // 🔍 Filter function
   const filterData = (term, type) => {
-    let results = data;
+    let results = filterData;
 
     if (type) {
       results = results.filter((event) => event.schedule.mode === type);
@@ -53,7 +53,7 @@ function App() {
 
   return (
     <div className="bg-light">
-      <Header onSearch={handleSearch} allData={data} />
+      <Header onSearch={handleSearch} allData={filteredData} />
       <section>
         <div className="container">
           <div className="d-flex align-items-center justify-content-between">
