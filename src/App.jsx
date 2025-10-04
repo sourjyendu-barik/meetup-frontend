@@ -20,7 +20,7 @@ function App() {
 
   // 🔍 Filter function
   const filterData = (term, type) => {
-    let results = filteredData;
+    let results = data;
 
     if (type) {
       results = results.filter((event) => event.schedule.mode === type);
