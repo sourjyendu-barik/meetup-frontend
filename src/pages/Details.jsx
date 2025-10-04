@@ -7,7 +7,7 @@ export default function Details() {
   const current_id = useParams().id;
   // console.log(current_id);
   const { data, loading, error } = useFetch(
-    `https://meetup-backend-two.vercel.app/meetings/id/68e0c402a96045ffa1475539`
+    `https://meetup-backend-two.vercel.app/meetings/id/${current_id}`
   );
   console.log(data);
   return (
